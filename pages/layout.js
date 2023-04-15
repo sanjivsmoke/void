@@ -11,12 +11,12 @@ const Layout = (props) => {
         <NavigationBar />
       </Grid>
       <Grid
-        css={{ height: "640px", width: "inherit" }}
-        direction="column"
-        xs={12}>
+        css={{ height:"73vh", width: "inherit" }}
+        xs={12}
+        >
         {props.children}
       </Grid>
-      <Grid css={{ w: "stretch", position: "sticky" }}>
+      <Grid css={{ w: "stretch"}}>
         <Footer />
       </Grid>
     </Grid.Container>

@@ -12,7 +12,7 @@ const NavigationBar = () => {
     "about",
     "portfolio",
     "service",
-    "Contact Details",
+    "contact",
   ];
 
 
@@ -71,11 +71,6 @@ const NavigationBar = () => {
             href={collapseItems[3]}>
             Service
           </Navbar.Link> */}
-          <Navbar.Link
-            isActive={router.pathname === "about" ? "true" : "false"}
-            href="#">
-            Contact Details
-          </Navbar.Link>
         </Navbar.Content>
         <Navbar.Content
           css={{

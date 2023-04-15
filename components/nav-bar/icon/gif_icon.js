@@ -5,7 +5,7 @@ const GifIcon = () => {
     <Image
       showSkeleton
       objectFit="fit"
-      src="img/1F4j.gif"
+      src="img/1F4J.gif"
       alt="Default Image"
       width={80}
       height={55}
