@@ -1,4 +1,4 @@
-import { Navbar, Text,  Link } from "@nextui-org/react";
+import { Navbar, Text, Link } from "@nextui-org/react";
 import { useRouter } from "next/router";
 
 import GifIcon from "./icon/gif_icon";
@@ -7,15 +7,32 @@ import DarkModerPopover from "./popover/darkmode_popover";
 const NavigationBar = () => {
   const router = useRouter();
 
-  const collapseItems = [
-    "home",
-    "about",
-    "portfolio",
-    "service",
-    "contact",
-  ];
+  const collapseItems = ["home", "about", "portfolio", "service", "contact"];
+
+  let pageIndex;
+
+  switch (router.pathname) {
+    case `/`:
+      pageIndex = "home";
+      break;
+    case`/about`:
+      pageIndex = "about";
+      break;
+    case `/portfolio`:
+      pageIndex = "portfolio";
+      break;
+    case `/service`:
+      pageIndex = "service";
+      break;
+    case`/contact`:
+      pageIndex = "contact";
+      break;
+  }
 
 
+  // console.log("current page is", router.pathname);
+  // console.log("current page without / is", pageIndex);
+  // console.log("index of current page is", collapseItems.indexOf(pageIndex))
 
   return (
     <>
@@ -43,9 +60,7 @@ const NavigationBar = () => {
             <Navbar.Link
               key={index}
               isActive={
-                router.pathname == "/"
-                  ? index === 0
-                  : index === router.pathname.indexOf(homePage)
+                 index === collapseItems.indexOf(pageIndex)
               }
               href={homePage === "home" ? "/" : homePage}>
               {homePage === "/" ? "home" : homePage}
@@ -88,9 +103,7 @@ const NavigationBar = () => {
               key={index}
               activeColor="secondary"
               isActive={
-                router.pathname == "/"
-                  ? index === 0
-                  : index === router.pathname.indexOf(item)
+                index === collapseItems.indexOf(pageIndex)
               }>
               <Link
                 color="inherit"
