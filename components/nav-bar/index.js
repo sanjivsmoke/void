@@ -66,26 +66,6 @@ const NavigationBar = () => {
               {homePage === "/" ? "home" : homePage}
             </Navbar.Link>
           ))}
-          {/* <Navbar.Link
-            isActive={router.pathname === desktopItems[0]}
-            href={desktopItems[0]}>
-            Home
-          </Navbar.Link>
-          <Navbar.Link
-            isActive={router.pathname === desktopItems[1]}
-            href={collapseItems[1]}>
-            about{" "}
-          </Navbar.Link>
-          <Navbar.Link
-            isActive={router.pathname === "portfolil"}
-            href={collapseItems[2]}>
-            Portfolio
-          </Navbar.Link>
-          <Navbar.Link
-            isActive={router.pathname === " service" ? "true" : "false"}
-            href={collapseItems[3]}>
-            Service
-          </Navbar.Link> */}
         </Navbar.Content>
         <Navbar.Content
           css={{
@@ -116,7 +96,7 @@ const NavigationBar = () => {
             </Navbar.CollapseItem>
           ))}
           <Navbar.CollapseItem>
-            <Text> sorry we dont provide Light Mode !! </Text>
+          <DarkModerPopover />
           </Navbar.CollapseItem>
         </Navbar.Collapse>
       </Navbar>

@@ -5,7 +5,7 @@ const PortfolioPage = () => {
   return (
     <>
       <Card css={{ bgColor: "transparent", alignItems: "center" }}>
-        <Image sizes="md" src="img/OBITO.png" alt="port" />
+        <Image sizes="md" src="img/obito.png" alt="obito" />
         <Spacer />
         <Text h2  css={{ m: 0, alignItems: "flex-start", textGradient: "45deg, $red600 -20%, $pink600 50%" }}>
           <TypewriterComponent

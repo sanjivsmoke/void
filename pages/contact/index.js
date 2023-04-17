@@ -3,18 +3,36 @@ import { Card, Grid, Text } from "@nextui-org/react";
 const Contact = () => {
   return (
     <>
-      <Grid.Container gap={1}>
+      <Grid.Container css={{flexDirection:"column" ,"@sm":{flexDirection:"row"}}} gap={1}>
         <Grid xs={6}>
-          <Card>
+          <Card  css={{
+            backgroundColor: "Black",
+            alignItems: "center",
+            alignSelf: "center",
+          }}>
             <Card.Body>
-              <Text>Default card. (shadow)</Text>
+              <Card.Image
+                objectFit="cover"
+                width="100%"
+                height="100%"
+                src="img/queen-sanji.gif"
+              />
             </Card.Body>
           </Card>
         </Grid>
         <Grid xs={6}>
-          <Card variant="flat">
+          <Card  css={{
+            backgroundColor: "Black",
+            alignItems: "center",
+            alignSelf: "center",
+          }}>
             <Card.Body>
-              <Text>Flat card.</Text>
+              <Card.Image
+                objectFit="fill"
+                width="100%"
+                height="100%"
+                src="img/kata-vs-luffy.gif"
+              />
             </Card.Body>
           </Card>
         </Grid>
