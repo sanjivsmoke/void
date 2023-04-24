@@ -16,7 +16,6 @@ import TypewriterComponent from "typewriter-effect";
 export default function Home() {
   const router = useRouter();
 
-
   const bannerImage = [
     "img/nirmal.jpg",
     "img/nirmalKumar_image.jpg",
@@ -37,7 +36,7 @@ export default function Home() {
   // console.log("the curretnimage are", currentBannerImage);
   return (
     <>
-      <Row css={{ flexDirection:"column","@sm":{ flexDirection:"row"}}}>
+      <Row css={{ flexDirection: "column", "@sm": { flexDirection: "row" } }}>
         <Card
           isPressable
           isHoverable
@@ -64,16 +63,25 @@ export default function Home() {
             alignSelf: "center",
             alignItems: "flex-start",
           }}>
-          <Card.Body css={{ gap: "$5" }}>
+          <Card.Body>
             <Text
               h1
+              hideIn={"sm"}
+              css={{
+                textGradient: "45deg, $blue600 , $purple600 50%",
+              }}>
+              P.C.NIRMAL KUMARd
+            </Text>
+            <Text
+              h2
+              showIn={"sm"}
               css={{
                 textGradient: "45deg, $blue600 , $purple600 50%",
               }}>
               P.C.NIRMAL KUMAR
             </Text>
             <Progress striped indeterminated color="secondary" status="black" />
-            <Text h2 color="white" css={{ m: 0, alignItems: "flex-start" }}>
+            <Text h3 color="white" css={{ m: 0, alignItems: "flex-start" }}>
               Creative
               <TypewriterComponent
                 options={{
@@ -83,15 +91,15 @@ export default function Home() {
                 }}
               />
             </Text>
-            <Button
-              bordered
-              color="gradient"
-              size="lg"
-              onClick={() => router.push("contact")}
-              auto>
-              Get in Touch
-            </Button>
           </Card.Body>
+          <Button
+            bordered
+            color="gradient"
+            size="lg"
+            onClick={() => router.push("contact")}
+            auto>
+            Get in Touch
+          </Button>
         </Card>
       </Row>
     </>

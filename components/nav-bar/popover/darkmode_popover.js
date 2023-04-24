@@ -1,6 +1,7 @@
 import { Popover, Button, Text, Link, Row } from "@nextui-org/react";
 import { AiOutlineBug } from "react-icons/ai";
 import TypewriterComponent from "typewriter-effect";
+import { IconName, VscDebug } from "react-icons/vsc";
 
 const DarkModerPopover = () => {
   return (
@@ -25,7 +26,7 @@ const DarkModerPopover = () => {
           href="https://www.youtube.com/shorts/_zm1YI9wMx0"
           rel="noopener noreferrer"
           target="_blank">
-          <AiOutlineBug size="20" />
+          <VscDebug size="20" />
         </Link>
         <Link
         css={{gap:"$20",color:"$cyan700" }}
@@ -39,7 +40,7 @@ const DarkModerPopover = () => {
           href="https://www.youtube.com/shorts/aftQAbHdXZs"
           rel="noopener noreferrer"
           target="_blank">
-          <AiOutlineBug size="20" />
+          <VscDebug size="20" />
         </Link>
         <Link
         css={{gap:"$20" ,color:"$red800"}}

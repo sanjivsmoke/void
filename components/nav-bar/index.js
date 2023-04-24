@@ -41,7 +41,7 @@ const NavigationBar = () => {
         <Navbar.Brand
           css={{
             "@xs": {
-              w: "12%",
+              w: "15%",
               gap: "$5",
             },
           }}>
