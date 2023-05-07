@@ -1,22 +1,18 @@
-import { Button, Card, Image, Link, Text } from "@nextui-org/react";
+import { Button, Card, Container, Image, Link, Text } from "@nextui-org/react";
 
 const About = () => {
   return (
     <Card
       css={{
+        height: "100%",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: "$10",
-        bgColor: "Black",
+        padding: "$1",
+        bgColor: "Gray",
+        gap: "$2",
       }}>
-      <Link
-        href="https://www.youtube.com/shorts/kPOyIDRUdS4"
-        target="https://www.youtube.com/shorts/kPOyIDRUdS4">
-        <Button shadow color="gradient" auto>
-          Want to Know About Me !!
-        </Button>
-      </Link>
+      <Card.Body>
+      <Text> About Me</Text>
+      </Card.Body>
     </Card>
   );
 };

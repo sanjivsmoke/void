@@ -2,10 +2,15 @@ import { Popover, Button, Text, Link, Row } from "@nextui-org/react";
 import { AiOutlineBug } from "react-icons/ai";
 import TypewriterComponent from "typewriter-effect";
 import { IconName, VscDebug } from "react-icons/vsc";
+import confetti from "canvas-confetti";
 
 const DarkModerPopover = () => {
+
+  const handleConfetti = () => {
+    confetti({spread: 180,spread: 180,particleCount: 100});
+  }
   return (
-    <Popover isBordered disableShadow>
+    <Popover onOpenChange={handleConfetti} isBordered disableShadow>
       <Popover.Trigger>
         <Button color="gradient" auto icon={<AiOutlineBug size="20" />} />
       </Popover.Trigger>

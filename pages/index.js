@@ -36,7 +36,7 @@ export default function Home() {
   // console.log("the curretnimage are", currentBannerImage);
   return (
     <>
-      <Row css={{ flexDirection: "column", "@sm": { flexDirection: "row" } }}>
+      <Row css={{ gap:"$1",flexDirection: "column", "@sm": { flexDirection: "row" } }}>
         <Card
           isPressable
           isHoverable
