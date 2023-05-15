@@ -70,7 +70,7 @@ export default function Home() {
               css={{
                 textGradient: "45deg, $blue600 , $purple600 50%",
               }}>
-              P.C.NIRMAL KUMARd
+              P.C.NIRMAL KUMAR
             </Text>
             <Text
               h2

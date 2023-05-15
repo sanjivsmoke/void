@@ -31,10 +31,13 @@ function Footer() {
   // social connect icon size
   const iconSize = 30;
 
-  const handleClick = () => {
+  const handleClickContacts = () => {
     router.push("/contact");
   };
-
+  const handleClickPhotography = () => {
+    router.push("/portfolio");
+  };
+ 
   return (
     <Collapse
       title={
@@ -59,7 +62,7 @@ function Footer() {
                   borderBottom: "$borderWeights$light solid $gray800",
                 }}>
                 <Text h6 color="white">
-                  WORK WITH ME
+                  WORK WITH US
                 </Text>
               </Card.Header>
               <Spacer />
@@ -68,16 +71,43 @@ function Footer() {
                 industry leading unique partners.
               </Text>
               <Button
+              id="contact"
                 bordered
                 color="gradient"
-                onClick={handleClick}
+                onClick={handleClickContacts}
                 css={{ margin: "$15" }}>
                 Learn More
               </Button>
             </Card.Body>
           </Card>
         </Grid>
-
+        <Grid
+          css={{ flexDirection: "column", "@sm": { flexDirection: "row" } }}>
+          <Card css={{ backgroundColor: "Black", size: "min-content" }}>
+            <Card.Body css={{}}>
+              <Card.Header
+                css={{
+                  justifyContent: "center",
+                  borderBottom: "$borderWeights$light solid $gray800",
+                }}>
+                <Text h6 color="white">
+                 INTO THE WIDE LIFE
+                </Text>
+              </Card.Header>
+              <Spacer />
+              <Text css={{ textAlign: "center" }}>
+              “ It is through living that we discover ourselves, at the same time as we discover the world around us. ”
+              </Text>
+              <Button
+                bordered
+                color="gradient"
+                onClick={handleClickPhotography}
+                css={{ margin: "$15" }}>
+                Learn More
+              </Button>
+            </Card.Body>
+          </Card>
+        </Grid>
         <Grid
           css={{ flexDirection: "column", "@sm": { flexDirection: "row" } }}>
           <Card css={{ backgroundColor: "Black", size: "min-content" }}>
