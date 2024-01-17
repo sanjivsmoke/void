@@ -1,18 +1,14 @@
 "use client";
-import {Accordion, AccordionItem} from "@nextui-org/react";
+import { Accordion, AccordionItem } from "@nextui-org/react";
 
- const FooterComponent =()=>{
+const FooterComponent = () => {
 
-const defaultContent = "hai";
-// const Title = ;
-    return(
-<div>
-<Accordion>
-      <AccordionItem key="1" aria-label="Accordion 1" subtitle="To Know More" title={" - MR. プリンス"}>
-        {defaultContent}
-      </AccordionItem>   
-    </Accordion>
-</div>
-    )
+
+
+  return (
+    <div className="">
+      <h1> WEBSITE MAINTAINED BY VOID.CROP</h1>
+    </div>
+  )
 }
 export default FooterComponent;

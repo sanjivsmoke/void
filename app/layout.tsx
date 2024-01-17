@@ -47,9 +47,9 @@ export default function RootLayout({
 						<main className="container mx-auto max-w-full max-h-full pt-5 px-3 flex-grow">
 							{children}
 						</main>
-						<footer className=" w-fully    py-3">
+						{/* <footer className="  w-fully    py-3">
 							<FooterComponent />
-						</footer>
+						</footer> */}
 					</div>
 				</Providers>
 			</body>

@@ -35,14 +35,8 @@ export const Navbar = () => {
 		case `/`:
 			pageIndex = 0;
 			break;
-		case `/about`:
-			pageIndex = 1;
-			break;
 		case `/portfolio`:
 			pageIndex = 2;
-			break;
-		case `/service`:
-			pageIndex = 3;
 			break;
 		case `/contact`:
 			pageIndex = 4;
@@ -50,7 +44,7 @@ export const Navbar = () => {
 	}
 
 	return (
-		<NextUINavbar maxWidth="xl" position="sticky">
+		<NextUINavbar maxWidth="full" position="sticky">
 			<NavbarContent>
 				<NavbarMenuToggle
 					aria-label={isMenuOpen ? "Close menu" : "Open menu"}

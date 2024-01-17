@@ -9,17 +9,10 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "About",
-      href: "/about",
-    },
-    {
       label: "Portfolio",
       href: "/portfolio",
     },
-    {
-      label: "Service",
-      href: "/service",
-    },
+
     {
       label: "Contact",
       href: "/contact",
@@ -31,16 +24,8 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "About",
-      href: "/about",
-    },
-    {
       label: "Portfolio",
       href: "/portfolio",
-    },
-    {
-      label: "service",
-      href: "/service",
     },
     {
       label: "Contact",
@@ -57,16 +42,12 @@ export const siteConfig = {
   homeImage:
     [
       {
-        lable: "myImage",
+        lable: "dark",
         href: "/MyImage/NirmalKumar.jpg"
       },
       {
-        lable: "itachImage",
-        href: "/MyImage/itachi.gif"
-      },
-      {
-        lable: "sanjiImage",
-        href: "/MyImage/sanji-sanji-thriller-bark.gif"
+        lable: "light",
+        href: "/MyImage/sanji.gif"
       },
     ]
 
