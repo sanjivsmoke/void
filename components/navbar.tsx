@@ -63,7 +63,7 @@ export const Navbar = () => {
 							color={
 								index === pageIndex ? "secondary" : "foreground"
 							}
-							className="w-full"
+							className="w-full font-bold"
 							href={item.href}
 							size="lg"
 						>

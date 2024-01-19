@@ -20,7 +20,7 @@ export default function LandingPage() {
                 <Spacer y={20} />
                 <h1 className="text-2xl sm:text-4xl font-serif ">Greetings, cosmic traveler! 🚀</h1>
                 <h1 className="text-2xl sm:text-4xl font-serif ">I am, </h1>
-                <h1 className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent text-3xl sm:text-5xl font-extrabold "  >
+                <h1 className="bg-gradient-to-r from-purple-500 to-purple-900 bg-clip-text text-transparent text-3xl sm:text-5xl font-extrabold "  >
                     P.C.NIRMAL KUMAR</h1>
                 <h1 className="text-2xl sm:text-4xl font-serif ">  – your stellar Full-stack navigator aboard the code-powered spacecraft.</h1>
 

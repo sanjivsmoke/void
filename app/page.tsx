@@ -16,7 +16,7 @@ export default function Home() {
 		<div className=" h-full w-full gap-2">
 			<LandingPage />
 			<Experiencepage />
-			<ServicePage />
+			{/* <ServicePage /> */}
 		</div>
 	);
 }

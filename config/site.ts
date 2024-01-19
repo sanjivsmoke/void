@@ -49,7 +49,52 @@ export const siteConfig = {
         lable: "light",
         href: "/MyImage/sanji.gif"
       },
-    ]
+    ],
+  skillData: [
+    {
+      title: "JavaScript",
+      percentage: 85,
+
+    },
+    {
+      title: " Next.js",
+      percentage: 80,
+
+    },
+    {
+      title: "Express.js",
+      percentage: 80,
+
+    },
+    {
+      title: " Node.js",
+      percentage: 80,
+
+    },
+    {
+      title: "Postgresql",
+      percentage: 75,
+
+    },
+    {
+      title: "TailWind Css",
+      percentage: 75,
+
+    },
+  ],
+  experience: [
+    {
+      title: "Full Stack Developer",
+      companyName: "Kridas Sports Platform",
+      companyInfo: "Kridas is a one platform for all - bringing all stakeholders within the sporting industry together.- Sectember 2022 to present",
+      image: "/logos_icons/solar-system.png"
+    }, {
+      title: "Front-End Developer",
+      companyName: "Crud Operation",
+      companyInfo: "CRUD Operations is a technology wise creative company doing extensive projects in the field of Website Designing, Website Development.- May 2022 to Sectember 2022",
+      image: "/logos_icons/earth.png"
+    }
+  ]
 
 };
 export const myInformation = {
