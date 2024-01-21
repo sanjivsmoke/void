@@ -18,15 +18,15 @@ export const GifIcon = () => {
   //   }
   // }, [theme]);
   return (
-    <div>
-      <Image
-        src={dynamicLogos}
-        alt="Default Image"
-        width={80}
-        height={40}
-        aria-labelledby="imageDark"
-      />
-    </div>
+
+    <Image
+      src={dynamicLogos}
+      alt="Default Image"
+      width={50}
+      height={50}
+      aria-labelledby="imageDark"
+    />
+
   );
 };
 

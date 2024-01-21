@@ -18,7 +18,7 @@ import {
 	DiscordIcon,
 	HeartFilledIcon,
 	SearchIcon,
-} from "@/components/icons";
+} from "@/components/icons/icons";
 import { GifIcon } from "./icons/logo";
 import { useState } from "react";;
 import { usePathname } from 'next/navigation'
@@ -36,10 +36,10 @@ export const Navbar = () => {
 			pageIndex = 0;
 			break;
 		case `/portfolio`:
-			pageIndex = 2;
+			pageIndex = 1;
 			break;
 		case `/contact`:
-			pageIndex = 4;
+			pageIndex = 2;
 			break;
 	}
 
