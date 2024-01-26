@@ -1,13 +1,9 @@
 "use client"
 
-
-
-import { useState } from "react";
-import { } from "@nextui-org/react";
-import TypewriterComponent from "typewriter-effect";
 import LandingPage from "@/components/homePageComp/landingPage";
 import Experiencepage from "@/components/homePageComp/experiencePage";
 import ServicePage from "@/components/homePageComp/servicePage";
+import CompanyTieUp from "@/components/homePageComp/companyTieUp";
 
 
 export default function Home() {
@@ -16,7 +12,8 @@ export default function Home() {
 		<div className=" h-full w-full gap-2">
 			<LandingPage />
 			<Experiencepage />
-			{/* <ServicePage /> */}
+			<ServicePage />
+			{/* <CompanyTieUp /> */}
 		</div>
 	);
 }

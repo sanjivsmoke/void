@@ -1,25 +1,43 @@
-import { Card, CardBody, CardHeader, CircularProgress, Divider } from "@nextui-org/react";
-import Image from "next/image";
+import { Card, CardBody, CardFooter, CardHeader, CircularProgress, Divider, Image } from "@nextui-org/react";
+import { siteConfig } from "@/config/site";
+
+
+
 
 export default function ServicePage() {
     return (
-        <div className="flex flex-col sm:flex-row  h-full items-center w-full justify-center gap-2 sm:gap-10 py-10 ">
+        <>
+            <Divider />
+            <h1 className="text-center text-2xl sm:text-4xl font-bold bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent m-3">Space Exploration Services</h1>
+            < div className="  grid grid-col-none  sm:grid-row-3 sm:grid-cols-3 gap-3 p-5 items-center justify-center h-full sm:h-1/2 w-full " >
+                {siteConfig.data.map((mData, index) => (
+                    <Card key={index} className="max-w-6xl h-full sm:max-h-unit-7xl ">
+                        <CardHeader className="items-center justify-center gap-4">
+                            {/* <TwitterIcon /> */}
+                            <p className="text-2xl font-semibold ">{mData.title}</p>
+                        </CardHeader>
+                        <Divider />
+                        <CardBody className="gap-5  ">
+                            {mData.about.map((inData, index) => (
+                                <p className="text-lg" key={index}>- {inData}</p>
+                            ))}
+                        </CardBody>
+                        {/* <CardFooter>
+                            <Link
+                                isExternal
+                                showAnchorIcon
+                                href="https://github.com/nextui-org/nextui"
+                            >
+                                Visit source code on GitHub.
+                            </Link>
+                        </CardFooter> */}
+                    </Card>
+                ))
+                }
 
-            <div className="bg-red-500 grid grid-cols-5 grid-rows-5 h-full w-full gap-3 p-2 ">
-                <div className="bg-blue-400 col-span-2 row-span-3 " >1</div>
-                <div className="bg-yellow-300 col-span-2 row-span-2 col-start-4 row-start-1 ">
-                    <div className="h-full w-full">
 
-                    </div>
-                </div>
-                <div className="bg-gray-400 col-span-3 row-span-3 col-start-3 row-start-3">3</div>
-                <div className="bg-orange-400 col-span-2 row-span-2 col-start-1 row-start-4">4</div>
-                <div className="bg-green-400 row-span-2 col-start-3 row-start-1">5</div>
-            </div>
+            </div >
 
-            <div className=" h-full w-full ">
-
-            </div>
-        </div>
+        </>
     )
 }

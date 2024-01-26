@@ -9,7 +9,9 @@ export default function Experiencepage() {
         <div className="grid grid-row-2 sm:grid-cols-2 w-full gap-5 sm:gap-10 py-10 items-center justify-center ">
             <div className=" h-[550px] w-full grid grid-cols-1 gap-1 m-2 ">
                 <div className="text-center ">
-                    <h1 className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent  text-2xl sm:text-4xl font-bold  ">Crafting celestial experiences into the web fabric as a,</h1>
+                    <h1 className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent  text-2xl sm:text-4xl font-bold  ">
+                        Crafting celestial experiences into the web fabric as a,
+                    </h1>
                 </div>
                 {siteConfig.experience.map((data, index) => (
                     <div key={index} className=" flex  flex-col sm:flex-row gap-4 items-center  p-2 text-start justify-evenly">

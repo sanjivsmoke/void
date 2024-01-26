@@ -94,6 +94,39 @@ export const siteConfig = {
       companyInfo: "CRUD Operations is a technology wise creative company doing extensive projects in the field of Website Designing, Website Development.- May 2022 to Sectember 2022",
       image: "/logos_icons/earth.png"
     }
+  ],
+  data: [
+    {
+      icon: "<TwitterIcon />",
+      title: "Web Design & Development",
+      about: [
+        "Landing Page",
+        "Web Hosting",
+        "SEO optimized",
+        "Amazon web service",
+        "Responsive  UI/UX Design"
+      ],
+    }, {
+      icon: "",
+      title: "Photography  & Digital art",
+      about: [
+        "Image Editing",
+        "Print Design",
+        "Video Editing",
+        "Graphic Design",
+        "Animation",
+      ],
+    }, {
+      icon: "",
+      title: "SEO & Digital Marketing",
+      about: [
+        "Higher Search Rankings",
+        "Social Media Optimization",
+        "On-Page SEO",
+        "Analyze performance",
+        "Content Optimization"
+      ],
+    },
   ]
 
 };
