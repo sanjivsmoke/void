@@ -149,3 +149,35 @@ export const myInformation = {
     }
   ]
 };
+export const galleryImage = {
+  gImage: [
+    "DSC00461.jpg",
+    "DSC00467.jpg",
+    "DSC00479.jpg",
+    "DSC02216-2.jpg",
+    "DSC03118.jpg",
+    "DSC03274-2-1 (1).jpg",
+    "DSC03274-2-1.jpg",
+    "DSC03305-2.jpg",
+    "DSC03333-2.jpg",
+    "DSC03340-2.jpg",
+    "DSC03456.jpg",
+    "DSC03484-2.jpg",
+    "DSC04684.jpg",
+    "DSC04889.jpg",
+    "DSC04994 (1).jpg",
+    "DSC05032.jpg",
+    "DSC06597.jpg",
+    "DSC07314.jpg",
+    "DSC07315.jpg",
+    "DSC07317 (1).jpg",
+    "DSC07335 (1).jpg",
+    "DSC07572.jpg",
+    "DSC07601.jpg",
+    "DSC07633 (1).jpg",
+    "DSC07633.jpg",
+    "DSC07653 (1).jpg",
+    "DSC07653.jpg"
+  ]
+
+}
