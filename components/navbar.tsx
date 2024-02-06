@@ -74,11 +74,6 @@ export const Navbar = () => {
 			</NavbarContent>
 			<NavbarContent justify="end">
 				<ThemeSwitch />
-				<NavbarItem>
-					<Button isIconOnly color="secondary" aria-label="Like">
-						<HeartFilledIcon />
-					</Button>
-				</NavbarItem>
 			</NavbarContent>
 			<NavbarMenu>
 				{siteConfig.navItems.map((item, index) => (

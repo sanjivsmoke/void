@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "NirmalKumar's Portfolio",
-  description: "Make beautiful websites regardless of your design experience.",
+  description: "Welcome to P.C. Nirmal Kumar's portfolio website, showcasing expertise in full-stack web development and photography services. Explore project offerings, experience, and captivating galleries. Get in touch to elevate your digital presence or capture memorable moments..",
   navItems: [
     {
       label: "Home",
@@ -32,13 +32,7 @@ export const siteConfig = {
       href: "/contact",
     }
   ],
-  links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://www.youtube.com/shorts/_zm1YI9wMx0"
-  },
+
   homeImage:
     [
       {
@@ -128,7 +122,6 @@ export const siteConfig = {
       ],
     },
   ]
-
 };
 export const myInformation = {
   tabs: [
@@ -181,3 +174,19 @@ export const galleryImage = {
   ]
 
 }
+
+export const sociallinks = [
+  {
+    link: "https://github.com/sanjivsmoke",
+    iconName: "github"
+  },
+  {
+    link: "https://twitter.com/nirmal022",
+    iconName: "twitter"
+  },
+  {
+    link: "https://www.instagram.com/evaz_studio/",
+    iconName: "instgram"
+  },
+]
+

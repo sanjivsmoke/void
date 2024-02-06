@@ -6,7 +6,6 @@ import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import clsx from "clsx";
 
-import FooterComponent from "@/components/footer/footer";
 
 
 export const metadata: Metadata = {
@@ -20,9 +19,9 @@ export const metadata: Metadata = {
 		{ media: "(prefers-color-scheme: dark)", color: "black" },
 	],
 	icons: {
-		icon: "/favicon.ico",
-		shortcut: "/favicon-16x16.png",
-		apple: "/apple-touch-icon.png",
+		icon: "/logos_icons/ufo.png",
+		shortcut: "/logo_icon/ufo.png",
+		apple: "/logo_icon/ufo.png",
 	},
 };
 
