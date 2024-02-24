@@ -9,6 +9,10 @@ export const siteConfig = {
       href: "/",
     },
     {
+      label: "Service",
+      href: "/service",
+    },
+    {
       label: "Portfolio",
       href: "/portfolio",
     },
@@ -93,33 +97,15 @@ export const siteConfig = {
     {
       icon: "<TwitterIcon />",
       title: "Web Design & Development",
-      about: [
-        "Landing Page",
-        "Web Hosting",
-        "SEO optimized",
-        "Amazon web service",
-        "Responsive  UI/UX Design"
-      ],
+      about: "Elevate your digital presence with our comprehensive services, offering responsive design and scalable website solutions. We specialize in crafting captivating landing pages and implementing vivid website design for optimal user experience.",
     }, {
       icon: "",
       title: "Photography  & Digital art",
-      about: [
-        "Image Editing",
-        "Print Design",
-        "Video Editing",
-        "Graphic Design",
-        "Animation",
-      ],
+      about: "Explore our diverse creative services, encompassing image editing, print design, video editing, graphic design, and animation. Let our expert team breathe life into your vision with precision and boundless creativity.",
     }, {
       icon: "",
       title: "SEO & Digital Marketing",
-      about: [
-        "Higher Search Rankings",
-        "Social Media Optimization",
-        "On-Page SEO",
-        "Analyze performance",
-        "Content Optimization"
-      ],
+      about: "Refine your online presence with our holistic optimization suite. Specializing in boosting search rankings, optimizing social media, and perfecting on-page SEO, we analyze performance and content to ensure your digital footprint shines.",
     },
   ]
 };

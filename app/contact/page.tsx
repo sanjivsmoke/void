@@ -20,7 +20,7 @@ export default function ContactPage() {
 			<section className="body-font relative">
 				<div className="container px-5 py-24 mx-auto">
 					<div className="flex flex-col text-center w-full mb-12">
-						<h1 className=" bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent sm:text-4xl text-2xl font-bold title-font mb-4">
+						<h1 className=" bg-gradient-to-r from-purple-500 to-purple-900 bg-clip-text text-transparent sm:text-4xl text-2xl font-bold title-font mb-4">
 							Contact Mission Control
 						</h1>
 						<p className="lg:w-1/2 mx-auto leading-relaxed text-base">

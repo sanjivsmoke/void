@@ -1,67 +1,192 @@
-import { Avatar, Card, CardBody, CardFooter, CardHeader, Chip, CircularProgress, Divider, Spacer } from "@nextui-org/react";
+'use-client'
 import { siteConfig } from "@/config/site";
-import Image from "next/image";
+import { Card, CardBody, CardFooter, CardHeader, Divider } from "@nextui-org/react";
+import { TwitterIcon } from "../icons/icons";
+import TypewriterComponent from "typewriter-effect";
+import { useState } from "react";
+import { Button } from "@nextui-org/button";
+
 
 export default function Experiencepage() {
+    const serviceCostDetails = {
+        webDevelopement: [{
+            title: "Web Design & Development",
+            about: [
+                "Landing Page",
+                "Web Hosting",
+                "SEO optimized",
+                "Amazon web service",
+                "Responsive  UI/UX Design"
+            ],
+            price: "$149"
+        }],
+        photography: [{
+            title: "Photography  & Digital art",
+            about: [
+                "Image Editing",
+                "Print Design",
+                "Video Editing",
+                "Graphic Design",
+                "Animation",
+            ],
+            price: "$139"
+        }],
+        Marketing: [
+            {
+                title: "SEO & Digital Marketing",
+                about: [
+                    "Higher Search Rankings",
+                    "Social Media Optimization",
+                    "On-Page SEO",
+                    "Analyze performance",
+                    "Content Optimization"
+                ],
+                price: "$129"
+            }
+        ]
 
+    }
+
+
+    const [pricingDetails, setPricingDetails] = useState<any | undefined>();
+    const handleClick = (title: any) => {
+        if (title === "Web Design & Development") {
+            setPricingDetails(serviceCostDetails.webDevelopement)
+        } else if (title === "Photography  & Digital art") {
+            setPricingDetails(serviceCostDetails.photography)
+        } else {
+            setPricingDetails(serviceCostDetails.Marketing)
+        }
+    }
 
     return (
-        <div className="grid grid-row-2 sm:grid-cols-2 w-full gap-5 sm:gap-10 py-10 items-center justify-center ">
-            <div className=" h-[550px] w-full grid grid-cols-1 gap-1 m-2 ">
-                <div className="text-center ">
-                    <h1 className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent  text-2xl sm:text-4xl font-bold  ">
-                        Crafting celestial experiences into the web fabric as a,
-                    </h1>
-                </div>
-                {siteConfig.experience.map((data, index) => (
-                    <div key={index} className=" flex  flex-col sm:flex-row gap-4 items-center  p-2 text-start justify-evenly">
-                        <Avatar radius="sm" isBordered src={data.image} className="w-40 h-20 sm:h-20 " ></Avatar> <div>
-                            <h1 className="text-2xl "> {data.title}</h1>
-                            <h2 className="text-lg "> {data.companyName} </h2>
-                            <h3 className="text-sm"> {data.companyInfo}</h3>
+        <div className="py-10   w-full h-full">
+            <div className="grid grid-col-1 sm:grid-cols-3 grid-rows-3 gap-5">
+                <div className="  sm:col-span-6 pt-5  h-full w-full">
+                    <h2 className="text-lg sm:text-4xl text-center leading-normal font-bold mt-5 ">
+                        Explore our diverse array of services, showcasing our
+                    </h2>
+                    <div className="grid grid-cols-4 grid-rows-3 gap-5 p-7 " >
+                        <div className="col-span-2w-1/2">
+                            <h2 className="bg-gradient-to-r from-purple-500 to-purple-900 bg-clip-text text-transparent text-3xl sm:text-4xl font-extrabold text-start " >
+                                <TypewriterComponent
+                                    options={{
+                                        strings: [" Versatility..."],
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                />
+                            </h2></div>
+                        <div className="col-span-2 col-start-3 row-start-3">
+                            <h2 className="bg-gradient-to-r from-purple-500 to-purple-900 bg-clip-text text-transparent text-3xl sm:text-4xl font-extrabold text-end " >
+                                <TypewriterComponent
+                                    options={{
+                                        strings: ["Expertise..."],
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                />
+                            </h2>
+
+                        </div>
+                        <div className="col-span-2 col-start-2  row-start-2 ">
+                            <h2 className="text-lg sm:text-4xl text-center  font-semibold mt-5 ">
+                                AND
+                            </h2>
                         </div>
                     </div>
-                ))}
-                {/* <div className=" flex flex-col sm:flex-row gap-4 items-center  p-2 text-start justify-evenly">
-                    <Avatar radius="sm" isBordered src="/logos_icons/star-map.png" className="w-40 sm:w-60  h-20 sm:h-20 " ></Avatar>
-                    <div>
-                        <h1 className="text-2xl "> Front-End Developer</h1>
-                        <h2 className="text-lg "> Crud Operation </h2>
-                        <h3 className="text-sm"> CRUD Operations is a technology wise creative company doing extensive
-                            projects in the field of Website Designing, Website Development.- May 2022 to Sectember 2022</h3>
-                    </div>
-                </div> */}
+                </div>
+                {siteConfig.data.map((mData, index) => (
+                    <div key={index} className=" pl-6 h-full w-full  ">
+                        <Card isHoverable isPressable className="w-full h-unit-7xl  " onClick={() => { handleClick(mData.title) }}>
+                            <CardHeader className="items-center justify-center flex flex-col gap-4">
+                                <TwitterIcon />
+                                <p className="text-2xl font-semibold ">{mData.title}</p>
+                            </CardHeader>
+                            <Divider />
+                            <CardBody className="gap-5  ">
+                                <p className="text-md sm:text-lg text-center" > {mData.about}</p>
 
-            </div>
-            <div className=" h-full w-full grid grid-cols-2 sm:grid-rows-1 place-items-center  gap-3 p-2">
-                <Image className="col-span-2 items-center" alt="spaceship" src="/logos_icons/ufo.png" width={50} height={50} />
-                {siteConfig.skillData.map((skillItems, index) => (
-                    <Card key={index} className="w-[220px] h-[230px] border-none bg-gradient-to-r from-violet-500 to-purple-500">
-                        <CardBody className="justify-center items-center pb-0">
-                            <CircularProgress
-                                classNames={{
-                                    svg: "w-36 h-36 drop-shadow-md",
-                                    indicator: "stroke-white",
-                                    track: "stroke-white/10",
-                                    value: "text-3xl font-semibold text-white",
-                                }}
-                                value={skillItems.percentage}
-                                strokeWidth={2}
-                                showValueLabel={true}
-                                label={<Chip
-                                    classNames={{
-                                        base: "border-1 border-white/30",
-                                        content: "text-white/90 text-small font-semibold",
-                                    }}
-                                    variant="bordered"
-                                >
-                                    {skillItems.title}
-                                </Chip>}
-                            />
+                            </CardBody>
+                            <CardFooter className="items-center justify-center">
+                                <h1 className="underline text-secondary text-lg font-semibold ">
+                                    Learn more
+                                </h1>
+                            </CardFooter>
+                        </Card>
+                    </div>
+                ))}
+                <div className="bg-red-500 h-full sm:col-span-6  w-full">
+                    <Card radius="none" className="w-full h-full ">
+                        <CardHeader className="items-center justify-center">
+                            <h1 className="text-3xl font-bold  ">Discover Our Service Costs</h1>
+                        </CardHeader>
+                        <Divider />
+                        <CardBody >
+                            {pricingDetails && pricingDetails.length > 0 ? (
+                                pricingDetails.map((PData: any, index: number) => (
+                                    <div key={index} className="grid  sm:grid-cols-3 sm:grid-rows-1 gap-4 h-full">
+                                        <div className="flex items-center justify-center h-full  border-b-2 sm:border-b-0  sm:border-r-2">
+                                            <h1 className="text-2xl font-medium">{PData.title}</h1>
+                                        </div>
+                                        <div className=" border-b-2 sm:border-b-0  sm:border-r-2">
+                                            {PData.about.map((inData: any, index: number) => (
+                                                <p className="text-lg text-center font-semibold pt-5" key={index}>- {inData}</p>
+                                            ))}
+                                        </div>
+                                        <div className="flex flex-col gap-5 items-center justify-center h-full">
+                                            <h1 className="text-3xl font-semibold text-center text-secondary animate-pulse "> {PData.price}/- Per Project</h1>
+                                            <Button size="lg" color="secondary" > Get Quote</Button>
+                                        </div>
+                                    </div>
+                                ))
+                            ) : (
+                                <div className="bg-slate-400 text-2xl text-center font-semibold ">Click the services above</div>
+                            )}
                         </CardBody>
                     </Card>
-                ))}
+                </div>
+                <div>
+                    <div className=" flex flex-col gap-5 ">
+                        <h1 className="text-lg sm:text-5xl font-bold text-left mt-10 ">Embark on a digital odyssey
+                            through the vast expanse of   cosmic
+                        </h1>
+                        <div className="flex-row w-full" >
+                            <h1 className="text-lg sm:text-5xl   font-bold  text-secondary-500">
+                                web development
+                            </h1>
+                            <h1 className="text-lg sm:text-5xl font-bold text-left  ">  and
+                            </h1>
+
+                            <h1 className="text-lg sm:text-5xl font-bold   text-secondary-500">photography services</h1>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     )
 }
+{/* <div className=" flex flex-col gap-5 ">
+                <h1 className="text-lg sm:text-5xl font-bold text-left mt-10 ">Embark on a digital odyssey
+                    through the vast expanse of   cosmic
+                </h1>
+                <div className="flex-row w-full" >
+                    <h1 className="text-lg sm:text-5xl   font-bold  text-secondary-500">
+                        web development
+                    </h1>
+                    <h1 className="text-lg sm:text-5xl font-bold text-left  ">  and
+                    </h1>
+
+                    <h1 className="text-lg sm:text-5xl font-bold   text-secondary-500">photography services</h1>
+                </div>
+            </div> */}
+
+
+//     <TypewriterComponent
+//     options={{
+//         strings: ["Web Development...", "Photography services..."],
+//         autoStart: true,
+//         loop: true,
+//     }}
+// />
