@@ -4,10 +4,6 @@ import { siteConfig } from "@/config/site";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import TypewriterComponent from "typewriter-effect";
-import { Button } from "@nextui-org/button";
-import { FaSpaceShuttle } from "react-icons/fa";
-import { Link } from "@nextui-org/link";
 import { useRouter } from "next/navigation";
 
 
@@ -34,20 +30,13 @@ export default function LandingPage() {
             <div className="  w-full  h-full    ">
                 <Spacer y={20} />
                 <div className="flex flex-row">
-                    <h1 className="text-2xl sm:text-4xl font-serif ">Greetings, cosmic traveler! </h1>
+                    <h1 className="text-2xl sm:text-4xl font-serif ">/ / Greetings, cosmic traveler! </h1>
                     <h1 className="text-2xl sm:text-4xl font-serif animate-spinner-ease-spin">🚀</h1>
                 </div>
                 <h1 className="text-2xl sm:text-4xl font-serif ">I am, </h1>
                 <h1 className="bg-gradient-to-r from-purple-500 to-purple-900 bg-clip-text text-transparent text-3xl sm:text-5xl font-extrabold "  >
                     P.C.NIRMAL KUMAR</h1>
                 <h1 className="text-2xl sm:text-4xl font-serif ">  – your stellar Full-stack navigator aboard the code-powered spacecraft.</h1>
-
-                <Button onClick={() => { router.push('/service') }} className="text-xl font-mono" size="lg" color="secondary" variant="shadow" endContent={<FaSpaceShuttle size="sm" />} >
-                    EXPLORE
-                </Button>
-
-
-
             </div>
         </div >)
 }

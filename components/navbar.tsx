@@ -26,15 +26,12 @@ export const Navbar = () => {
 	switch (pathname) {
 		case `/`:
 			pageIndex = 0;
-			break;
-		case `/service`:
+			break;	
+		case `/portfolio`:
 			pageIndex = 1;
 			break;
-		case `/portfolio`:
-			pageIndex = 2;
-			break;
 		case `/contact`:
-			pageIndex = 3;
+			pageIndex = 2;
 			break;
 	}
 

@@ -7,11 +7,7 @@ export const siteConfig = {
     {
       label: "Home",
       href: "/",
-    },
-    {
-      label: "Service",
-      href: "/service",
-    },
+    }, 
     {
       label: "Portfolio",
       href: "/portfolio",
@@ -48,62 +44,17 @@ export const siteConfig = {
         href: "/MyImage/sanji.gif"
       },
     ],
-  skillData: [
-    {
-      title: "JavaScript",
-      percentage: 85,
-
-    },
-    {
-      title: " Next.js",
-      percentage: 80,
-
-    },
-    {
-      title: "Express.js",
-      percentage: 80,
-
-    },
-    {
-      title: " Node.js",
-      percentage: 80,
-
-    },
-    {
-      title: "Postgresql",
-      percentage: 75,
-
-    },
-    {
-      title: "TailWind Css",
-      percentage: 75,
-
-    },
-  ],
-  experience: [
-    {
-      title: "Full Stack Developer",
-      companyName: "Kridas Sports Platform",
-      companyInfo: "Kridas is a one platform for all - bringing all stakeholders within the sporting industry together.- Sectember 2022 to present",
-      image: "/logos_icons/solar-system.png"
-    }, {
-      title: "Front-End Developer",
-      companyName: "Crud Operation",
-      companyInfo: "CRUD Operations is a technology wise creative company doing extensive projects in the field of Website Designing, Website Development.- May 2022 to Sectember 2022",
-      image: "/logos_icons/earth.png"
-    }
-  ],
   data: [
     {
-      icon: "<TwitterIcon />",
+      icon: "/logos_icons/service_icon/webDevelopement.png",
       title: "Web Design & Development",
       about: "Elevate your digital presence with our comprehensive services, offering responsive design and scalable website solutions. We specialize in crafting captivating landing pages and implementing vivid website design for optimal user experience.",
     }, {
-      icon: "",
+      icon: "/logos_icons/service_icon/photography.png",
       title: "Photography  & Digital art",
       about: "Explore our diverse creative services, encompassing image editing, print design, video editing, graphic design, and animation. Let our expert team breathe life into your vision with precision and boundless creativity.",
     }, {
-      icon: "",
+      icon: "/logos_icons/service_icon/seo.png",
       title: "SEO & Digital Marketing",
       about: "Refine your online presence with our holistic optimization suite. Specializing in boosting search rankings, optimizing social media, and perfecting on-page SEO, we analyze performance and content to ensure your digital footprint shines.",
     },
