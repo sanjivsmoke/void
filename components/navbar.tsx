@@ -8,17 +8,9 @@ import {
 	NavbarItem,
 	NavbarMenuItem,
 } from "@nextui-org/navbar";
-import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-	TwitterIcon,
-	GithubIcon,
-	DiscordIcon,
-	HeartFilledIcon,
-	SearchIcon,
-} from "@/components/icons/icons";
 import { GifIcon } from "./icons/logo";
 import { useState } from "react";;
 import { usePathname } from 'next/navigation'
@@ -34,7 +26,7 @@ export const Navbar = () => {
 	switch (pathname) {
 		case `/`:
 			pageIndex = 0;
-			break;
+			break;	
 		case `/portfolio`:
 			pageIndex = 1;
 			break;
@@ -51,8 +43,10 @@ export const Navbar = () => {
 					className="sm:hidden"
 				/>
 				<NavbarBrand>
-					<GifIcon />
-					<p className="font-bold text-2xl ">| VOID</p>
+					<Link href="/" color="foreground">
+						<GifIcon />
+						<p className="font-bold text-2xl ">| VOID</p>
+					</Link>
 				</NavbarBrand>
 			</NavbarContent>
 
